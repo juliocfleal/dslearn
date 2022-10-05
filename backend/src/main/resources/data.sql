@@ -12,3 +12,5 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
+
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp', 'https://149818895.v2.pressablecdn.com/wp-content/uploads/2020/02/Free-Online-Course.jpg', 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png');
