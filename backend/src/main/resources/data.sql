@@ -14,3 +14,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 
 INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp', 'https://149818895.v2.pressablecdn.com/wp-content/uploads/2020/02/Free-Online-Course.jpg', 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png');
+
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0',TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', TIMESTAMP WITH TIME ZONE '2022-07-13T20:50:07.12345Z', 1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0',TIMESTAMP WITH TIME ZONE '2022-07-13T20:50:07.12345Z', TIMESTAMP WITH TIME ZONE '2023-07-13T20:50:07.12345Z', 1);
