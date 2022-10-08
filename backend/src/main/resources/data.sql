@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilhe HTML', 'Trilha principal do curso', 1, 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Tire as suas duvidas', 2, 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma!',3, 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png', 0, 1);
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 1', 'Neste capitulo vamos comecar', 1, 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 2', 'Neste capitulo vamos continuar', 2, 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 3', 'Neste capitulo vamos finalizar', 3, 'https://ctl.wiley.com/wp-content/uploads/2016/07/CE_1-1-300x221.png', 1, 2);
