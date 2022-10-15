@@ -43,3 +43,22 @@ INSERT INTO tb_task (id , description, question_Count, approval_Count, weight, d
 
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Primeiro feedback!', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', true, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Segundo feedback!', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', false, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Terceiro feedback!', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', true, '/offers/1/resource/1/sections/1', 1);
+
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, offer_id, user_id, lesson_id) VALUES ('/offers/1/resource/1/sections/1', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', 1, 'Muito bem!', null, 1, 1, 2);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, offer_id, user_id, lesson_id) VALUES ('/offers/1/resource/1/sections/1', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', 0, 'Aguarde...', 9, 1, 2, 1);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, offer_id, user_id, lesson_id) VALUES ('/offers/1/resource/1/sections/1', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', 2, 'Refaca o exercicio!', 4, 1, 1, 3);
+
+INSERT INTO tb_topic (title, body, moment, lesson_id, author_id, offer_id, reply_id) VALUES ('Titulo do topico 1', 'Mensagem do topico 1', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', 1, 1, 1, null);
+INSERT INTO tb_topic (title, body, moment, lesson_id, author_id, offer_id, reply_id) VALUES ('Titulo do topico 2', 'Mensagem do topico 2', TIMESTAMP WITH TIME ZONE '2021-07-13T20:50:07.12345Z', 1, 2, 1, null);
+
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1 ,2);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2 ,1);
+
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Tente reiniciar o computador', TIMESTAMP WITH TIME ZONE '2020-12-15T13:00:00Z', 2, 2);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Deu certo, valeu!', TIMESTAMP WITH TIME ZONE '2020-12-20T13:00:00Z', 1, 1);
+
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
